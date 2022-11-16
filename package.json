@@ -1,0 +1,19 @@
+{
+  "name": "npm",
+  "version": "1.0.0",
+  "description": "projet 3",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JanelS26/projet3.git"
+  },
+  "author": "Janel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JanelS26/projet3/issues"
+  },
+  "homepage": "https://github.com/JanelS26/projet3#readme"
+}
