@@ -1,0 +1,63 @@
+body {
+    margin: 0px
+}
+
+header img {
+   margin-left: 60px;
+   margin-top: 10px;
+
+}
+
+.image-cover img {
+    object-fit: cover;
+    height: 300px;
+    width: 100%;
+
+}
+
+.resto-fr {
+    background-color: #f5f5f5;
+    padding: 20px;
+    margin-top: -40px;
+    border-radius: 40px 40px 0 0;
+    position: relative;
+}
+
+h3 {
+    border-bottom: solid 3px #99e2d0;
+    width: 40px;
+}
+.plats {
+    background-color: white;
+    border-radius: 15px;
+}
+
+.plats__info {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 10px;
+    padding-left: 7px;
+
+}
+
+.plats__name {
+    margin-bottom: 0px;
+    padding-top: 5px;
+    padding-left: 7px;
+    
+}
+
+.btn-delivery {
+    background: linear-gradient(#ff79da, #9356dc);
+    color: white;
+    border: none;
+    border-radius: 100px;
+    font-size: 20px;
+    padding: 18px;
+    width: 70%;
+    margin-top: 20px;
+}
+
+.plats__btn {
+
+}
