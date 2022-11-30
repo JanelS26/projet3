@@ -8,6 +8,7 @@
     Commandez votre repas en ligne et choisissez entre nos meilleurs plats du restaurant a la francaise> 
     
     <script src="https://kit.fontawesome.com/cdcf378c59.js" crossorigin="anonymous"></script>
+    <link href='https://fonts.googleapis.com/css?family=Shrikhand' rel='stylesheet'>
     <link rel="stylesheet" href="francaise.css">
 
 
@@ -17,12 +18,14 @@
 </head>
 
 <header>
-    <div>   
+    <div class="logo">
+        <a href="/">
+        <i class="fas fa-arrow-left"></i>
+        </a>
         <img src="images/logo/ohmyfood@2x.svg"
          alt="logo oh my food">
 
-         <i class="fas fa-long-arrow-left"></i>            
-    </div>
+        </div>
 </header>
 
 <section class="image-cover">
@@ -38,41 +41,77 @@
 
     </div>
     
-    <h3>Entrées</h3>
-        <div class="plats">
-            <p class="plats__name"><strong>Tartare de poulpe acidulé</strong></p>
+    <h2 class="heading-plats">Entrées</h2>
+        
+    <div class="plats">
+        <div class="plats__details">
+           <div class="plats__name">
+            <p><strong>Tartare de poulpe acidulé</strong></p> 
+                    
+            
+            
             <div class="plats__info">
-            <p>Aux zestes d'orange</p>
-            <p><strong>25€</strong></p>
-       
+                <p>Aux zestes d'orange</p>
+                <p><strong>25€</strong></p>
+            
+            </div>
         </div>
+            <div class="plats__check">
+                    <i class="fas fa-check-circle"></i>   
+            </div>
+            
+        </div> 
         </div>
 
-            <div class="plats">
-            <p class="plats__name"><strong>Velouté de légumes d'antan</p></strong>
-            <div class="plats__info">
+
+        <div class="plats">
+                <div class="plats__details">
+            
+            <p class="plats__name">
+                <strong>Velouté de légumes d'antan</p></strong>
+                
+        <div class="plats__info">
             <p>Carotte, panais, topinambour</p>
             <p><strong>35€</strong></p>
-       
-        </div>
+           
         </div>
         
+        <div class="plats__check">
+            <span>
+                <i class="fas fa-check-circle"></i>   
+            </span>
+        </div>
+        </div>
+            </div>
+        
 
-            <div class="plats">
-                <p class="plats__name"><strong>Soupe à l'oignon</p></strong>
+    <div class="plats">
+                <div class="plats__details">
+            
+            <p class="plats__name">
+                <strong>Soupe à l'oignon</p></strong>
+                
                 <div class="plats__info">
-                <p>Revisitée</p>
-            <p><strong>20€</strong></p>
+                    <p>Revisitée</p>
+                    <p><strong>20€</strong></p>
+                </div>
+            <div class="plats__check">
+            <span>
+                <i class="fas fa-check-circle"></i>   
+            </span>
+            
        
         </div>
         </div>
+    </div>
+
         
         
     
 
 
 
-    <h3>Plats</h3>
+        <h3 class="heading-plats">Plats</h3>
         <div class="plats">
             <p class="plats__name"><strong>Coquilles Saint-Jacques</p></strong>
             <div class="plats__info">
@@ -102,7 +141,7 @@
 
 
 
-    <h3>Desserts</h3>
+    <h3 class="heading-plats">Desserts</h3>
         <div class="plats">
             <p class="plats__name"><strong>Pétales de violettes glacés</p></strong>
             <div class="plats__info">
@@ -150,26 +189,26 @@
     </main>
 </body>
 <footer>
-    <div>
-        <img src="images/logo/ohmyfood@2x.svg">
+    <h3>ohmyfood</h3>
+    
 
-    </div>
+    <div class="footer__liens">
+        <i class="footer__icons fas fa-utensils"></i>
+        <h4>Proposer un restaurant</h4>
+   </div>    
 
-    <divc class="liens-footer">
-        <i class="fa-solid fa-utensils"></i>
-    <h4>Proposer un restaurant</h4>
+    <div class="footer__liens">
+        <i class="footer__icons fas fa-hands-helping"></i>
 
-    <div class="liens-footer">
-        <i class="fa-solid fa-handshake-angle"></i>
         <h4>Devenir partenaire</h4>
     </div>
 
-    <div class="liens-footer">
+    <div class="footer__liens">
         <h4>Mentions légales</h4>
 
     </div>
 
-    <div class="liens-footer">
+    <div class="footer__liens">
         <h4>Contact</h4>
 
     </div>

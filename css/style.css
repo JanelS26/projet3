@@ -1,14 +1,15 @@
 
 header .logo {
-    margin-top: 10px;
-
-}
-
-header img {
+    margin-top: 20px;
+    padding-bottom: 5px;
     height: 30px;
-    width: 150px;
-    margin-left: 30%;
+    display: flex;
+    justify-content: center;
+    box-shadow: rgb(149 157 165 / 20%) 0px 8px 24px;
+    position: sticky;
+
 }
+
 
 body {
     font-family: "roboto", sans-serif;
@@ -18,7 +19,8 @@ footer h3 {
         font-family: "Shrikhand";
         font-style: italic;
         font-weight: bold;
-        font-size: 40px;
+        font-size: 20px;
+        margin-left: 30px;
     
     }
 
@@ -44,7 +46,7 @@ footer h3 {
     flex-direction: column;
     align-items: center;
     background-color: #f7f7f7;
-    padding: 40px;
+    padding: 30px;
     text-align: center;
 }
 
@@ -57,8 +59,9 @@ footer h3 {
     color: white;
     border: none;
     border-radius: 100px;
-    font-size: 20px;
-    padding: 18px;
+    font-size: 18px;
+    padding: 13px;
+    width: 90%;
 
 }
 
@@ -203,6 +206,11 @@ footer {
     margin-left: 20px;
 }
 
+.footer__liens h4 {
+    margin: 5px;
+}
+
 .footer__icons {
     margin-right: 10px;
+    font-weight: 600;
 }
