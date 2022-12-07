@@ -74,35 +74,78 @@ h1 {
 
 .plats {
     display: flex;
-    flex-direction: column;
     background-color: white;
     margin-bottom: 20px;
     border-radius: 15px;
     padding-left: 10px;
     font-size: 15px;
+    overflow: hidden;
 
+}
+
+.plats:hover {
+    box-shadow: rgb(149 157 165 / 20%) 0px 8px 24px;
 }
 
 
  .plats__name {
-    margin-top: 10px;
-    
+    width: 70%;
+    white-space: nowrap;
 }
 
 
 .plats__check {
-    display: none;
+    display: flex;
     justify-content: center;
     align-items: center;
-    width: 60px;
     background: #99e2d0;
     color: white;
+    width: 40%;
+    border-radius: 0px 10px 10px 0px;
+    cursor: pointer;
+    animation: plats__check 2s;
+    margin-right: -100px;
+    overflow: hidden;
+
 }
+
+   .plats:hover {
+        margin-right: 100px
+
+
+}
+
+.plats__check:hover {
+
+}
+
+
+.plats__check i {
+    font-size: 20px;
+}
+
+@keyframes plats__check {
+    from { transform: translateX(20px);
+    }
+     to {
+        transform: translateX(0);     
+    }
+}
+
+
+
+
+
+
+
+
 
 .plats__info {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-right: 10px;
+    align-items: flex-end;
+    width: 30%;
 }
 
 

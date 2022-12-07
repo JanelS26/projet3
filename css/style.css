@@ -55,7 +55,7 @@ footer h3 {
 }
 
 .btn-explore {
-    background: linear-gradient(#ff79da, #9356dc);
+    background: linear-gradient(180deg, #ff79da, #9356dc);
     color: white;
     border: none;
     border-radius: 100px;
@@ -66,9 +66,7 @@ footer h3 {
 
 }
 
-
-
-      .fonctionnement h2 {
+.fonctionnement h2 {
         font-weight: bold;
         padding: 10px;
     }
@@ -93,9 +91,17 @@ footer h3 {
    cursor: pointer;
    } 
 
-   .functions__step:hover {
+   .functions :hover {
     background-color: #f5edff;
+
    }
+
+    .functions i:hover
+    {
+        color: #9356dc;
+    }
+
+   
   
    .functions {
     padding: 15px;
@@ -109,10 +115,7 @@ footer h3 {
     color: grey;
  }
 
- .functions__icon:hover {
-    color: #9356dc;
-    cursor: pointer;
- }
+ 
 
    .functions__number {
     color: white;
@@ -134,12 +137,49 @@ footer h3 {
     background-color: #f7f7f7;
 }
 
+@media only screen and (min-width:1200px)
+{
+
+.top, .bottom {
+display: flex;
+justify-content: space-around;
+}
+
+.card {
+    width: 40%;
+}
+
+.functions {
+    margin-bottom: 20px;
+}
+
+.section-restos h2 {
+    margin-left: 70px;
+}
+
+.fonctionnement h2{
+    margin-left: 70px;
+}
+
+.functions {
+    display: flex;
+    flex-direction: row;
+}
+
+.btn-explore {
+    width: 30%;
+}
+
+}
+
+
 
 .card {
     background-color: white;
     margin-bottom: 20px;
     border-radius: 20px;
     cursor: pointer;
+    position: relative;
 }
 
 .card h3 {
@@ -170,8 +210,17 @@ footer h3 {
     font-weight: normal;
     grid-area: 1/2;
     margin-top: 20px;
-    margin-right: 20px;
-}
+    margin-right: 20px;}
+
+ .card-icon i:hover {
+        font-weight: 700;
+        background-image: linear-gradient(180deg, #FF79DA, #9356DC);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -moz-text-fill-color: transparent;
+        -moz-background-clip: text;
+    }
+
 
  .card-info {
     display: grid;
