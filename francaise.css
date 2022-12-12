@@ -103,30 +103,41 @@ h1 {
     width: 100px;
     border-radius: 0px 10px 10px 0px;
     cursor: pointer;
-    animation: plats__check 2s;
     margin-right: -100px;
     overflow: hidden;
+
+}
+
+.plats__check i {
+    transform: rotate(180deg);
 
 }
 
    .plats:hover {
         margin-right: 100px
 
+}
 
+.plats:hover .plats__check {
+    margin-right: 0px;
+}
+
+.plats__check:hover {
+transform: rotate(180deg);
 }
 
 .plats__check i {
     font-size: 20px;
 }
 
-@keyframes plats__check {
-    from { transform: translateX(20px);
+@keyframes check {
+    from {
+        margin-left: 0%;
     }
-     to {
-        transform: translateX(0);     
+    to {
+        margin-left: 80%;
     }
 }
-
 
 
 

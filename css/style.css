@@ -96,7 +96,7 @@ footer h3 {
 
    }
 
-    .functions i:hover
+    .functions__step:hover i
     {
         color: #9356dc;
     }
