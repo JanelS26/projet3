@@ -243,6 +243,206 @@ justify-content: space-around;
     padding: 10px;
 }
 
+
+/* Styles menu page */
+
+body {
+    margin: 0px;
+    font-family: "Roboto", sans-serif;
+}
+
+footer h3 {
+    font-family: "Shrikhand";
+    font-style: italic;
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 30px;
+
+}
+
+
+
+header .logo {
+    margin-top: 20px;
+    padding-bottom: 5px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    box-shadow: rgb(149 157 165 / 20%) 0px 8px 24px;
+    position: sticky;
+    align-items: center;
+    gap: 4%;
+
+}
+
+header i {
+    font-size: 25px;
+}
+
+h1 {
+    font-family: "Shrikhand";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+
+}
+
+
+
+.image-cover img {
+    object-fit: cover;
+    height: 300px;
+    width: 100%;
+
+}
+
+.titre {
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+
+.titre i {
+  font-size: 25px;  
+}
+
+
+.resto-fr {
+    background-color: #f5f5f5;
+    padding: 20px;
+    margin-top: -40px;
+    border-radius: 40px 40px 0 0;
+    position: relative;
+}
+
+.heading-plats {
+    border-bottom: solid 3px #99e2d0;
+    width: 40px;
+}
+
+.plats {
+    display: flex;
+    background-color: white;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    padding-left: 10px;
+    font-size: 15px;
+    overflow: hidden;
+    animation: fadeInDown 0.6s;
+   
+   
+}
+
+.plats:hover {
+    box-shadow: rgb(149 157 165 / 20%) 0px 8px 24px;
+}
+
+
+ .plats__name {
+    width: 70%;
+    white-space: nowrap;
+}
+
+
+.plats__confirmation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #99e2d0;
+    color: white;
+    width: 100px;
+    cursor: pointer;
+    margin-right: -100px;
+    overflow: hidden;
+   
+
+
+}
+
+.plats:hover {
+        margin-right: 100px
+
+}
+
+.plats:hover .plats__confirmation {
+    margin-right: 0px;
+}
+
+.plats:hover .plats__check {
+   
+    transform: rotate(0);
+
+}
+
+
+
+.plats__confirmation i {
+    font-size: 20px;
+}
+
+
+.plats__check {
+    display: flex;
+    justify-content: center;
+    background-color: #99e2d0;
+    width: 10px;
+    color: white;
+    border-radius: 100px;
+    cursor: pointer;
+    transform: rotate(180deg);
+    transition-duration: 0.2s;
+
+}
+
+@keyframes check {
+    from {
+        margin-left: 0%;
+    }
+    to {
+        margin-left: 80%;
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+		transform: scale(0);
+	}
+	to {
+		transform: scale(1)
+	}
+}
+
+
+
+
+.plats__info {
+    display: flex;
+    justify-content: space-around;
+    margin-right: 10px;
+    align-items: flex-end;
+    width: 30%;
+}
+
+
+.btn-delivery {
+    background: linear-gradient(#ff79da, #9356dc);
+    color: white;
+    border: none;
+    border-radius: 100px;
+    font-size: 20px;
+    padding: 18px;
+    width: 70%;
+    margin-top: 20px;
+}
+
+.plats__btn {
+    display: flex;
+    justify-content: center;
+
+}
+
+
+
 footer {
     background-color: #353535;
     color: white;
