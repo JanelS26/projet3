@@ -33,7 +33,7 @@ body {
         content:"";
         border: 16px solid #f3f3f3;
         border-radius: 50%;
-        border-top: 16px solid #3498db;
+        border-top: 16px solid #9356DC;
         width: 80px;
         height: 80px;
         animation: loading 0.75s ease infinite ;
@@ -276,7 +276,7 @@ justify-content: space-around;
 
 }
 
-.card-info h3 a:visited {
+.card-info a:visited {
     text-decoration: none;
 }
 
@@ -395,7 +395,7 @@ h1 {
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
-    flex: 1;
+    
     
 }
 
