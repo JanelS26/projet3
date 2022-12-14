@@ -15,6 +15,44 @@ body {
     font-family: "roboto", sans-serif;
     margin: 0px;}
 
+    .loader {
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: opacity 0.75s, visibility 0.75s;
+
+
+       
+      }
+      
+    .loader::after
+    {
+        content:"";
+        border: 16px solid #f3f3f3;
+        border-radius: 50%;
+        border-top: 16px solid #3498db;
+        width: 80px;
+        height: 80px;
+        animation: loading 0.75s ease infinite ;
+    }
+      
+      @keyframes loading {
+        from { transform: rotate(0turn) }
+        to { transform: rotate(1turn) }
+        
+      }
+
+
+.loader--hideden {
+     opacity: 0;
+     visibility: hidden;
+}
+
+
+
 footer h3 {
         font-family: "Shrikhand";
         font-style: italic;
@@ -61,7 +99,6 @@ footer h3 {
     border-radius: 100px;
     font-size: 18px;
     padding: 13px;
-    width: 90%;
     cursor: pointer;
 
 }
@@ -137,7 +174,8 @@ footer h3 {
     background-color: #f7f7f7;
 }
 
-@media only screen and (min-width:1200px)
+
+@media only screen and (min-width: 992px) and (max-width: 1500px)
 {
 
 .top, .bottom {
@@ -166,11 +204,20 @@ justify-content: space-around;
     flex-direction: row;
 }
 
-.btn-explore {
+.btn-explore .btn-delivery {
     width: 30%;
 }
 
+
+
+.plats__confirmation {
+    margin-right: -150px;
 }
+
+
+
+}
+
 
 
 
@@ -227,6 +274,10 @@ justify-content: space-around;
     justify-content: space-between;
     margin: 0px;
 
+}
+
+.card-info h3 a:visited {
+    text-decoration: none;
 }
 
 .card-tag {
@@ -320,6 +371,11 @@ h1 {
     width: 40px;
 }
 
+.heading-plats h2 {
+    font-size: 20px;
+}
+
+
 .plats {
     display: flex;
     background-color: white;
@@ -329,18 +385,49 @@ h1 {
     font-size: 15px;
     overflow: hidden;
     animation: fadeInDown 0.6s;
+    width: 100%;
    
    
 }
 
-.plats:hover {
-    box-shadow: rgb(149 157 165 / 20%) 0px 8px 24px;
-}
-
-
- .plats__name {
+.plats__name {
     width: 70%;
+    text-overflow: ellipsis;
+    overflow: hidden;
     white-space: nowrap;
+    flex: 1;
+    
+}
+
+.plats__name p {
+    margin-left: 10px;
+    white-space: nowrap; 
+    text-overflow: ellipsis;
+    margin-top: 0px;
+    font-size: 15px;
+
+    
+}
+
+.plats__name h3 {
+    font-size: 15px;
+
+}
+
+
+.plats__name h3 p:hover {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+
+}
+
+.plats__info {
+    display: flex;
+    justify-content: space-around;
+    margin-right: 10px;
+    align-items: flex-end;
+    width: 30%;
 }
 
 
@@ -350,34 +437,30 @@ h1 {
     align-items: center;
     background: #99e2d0;
     color: white;
-    width: 100px;
+    width: 30%;
     cursor: pointer;
-    margin-right: -100px;
+    margin-right: -300px;
     overflow: hidden;
-   
-
-
+    animation: check;
 }
 
-.plats:hover {
-        margin-right: 100px
 
-}
+
+
 
 .plats:hover .plats__confirmation {
-    margin-right: 0px;
+margin-right: 0px;
 }
 
 .plats:hover .plats__check {
-   
-    transform: rotate(0);
+
+transform: rotate(0);
 
 }
 
 
-
 .plats__confirmation i {
-    font-size: 20px;
+    font-size: 25px;
 }
 
 
@@ -385,14 +468,17 @@ h1 {
     display: flex;
     justify-content: center;
     background-color: #99e2d0;
-    width: 10px;
     color: white;
     border-radius: 100px;
     cursor: pointer;
     transform: rotate(180deg);
-    transition-duration: 0.2s;
+    transition-duration: 0.5s;
 
 }
+
+
+
+
 
 @keyframes check {
     from {
@@ -405,41 +491,31 @@ h1 {
 
 @keyframes fadeInDown {
     from {
-		transform: scale(0);
-	}
-	to {
-		transform: scale(1)
-	}
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1)
+    }
 }
 
 
-
-
-.plats__info {
-    display: flex;
-    justify-content: space-around;
-    margin-right: 10px;
-    align-items: flex-end;
-    width: 30%;
-}
-
-
-.btn-delivery {
-    background: linear-gradient(#ff79da, #9356dc);
-    color: white;
-    border: none;
-    border-radius: 100px;
-    font-size: 20px;
-    padding: 18px;
-    width: 70%;
-    margin-top: 20px;
-}
 
 .plats__btn {
     display: flex;
     justify-content: center;
 
 }
+
+.btn-delivery {
+    background: linear-gradient(#ff79da, #9356dc);
+    color: white;
+    border: none;
+    border-radius: 100px;
+    font-size: 17px;
+    padding: 16px;
+    margin-top: 20px;
+}
+
 
 
 
