@@ -72,7 +72,7 @@ footer h3 {
     
     }
 
-
+  
 
 .localisation-paris {
     background-color: #ededed;
@@ -80,7 +80,7 @@ footer h3 {
     align-items: center;
     justify-content: center;
     font-size: 20px;
-    gap: 5%;
+    gap: 5px;
 }
 
 .localisation-paris .icon__geoloc {
@@ -224,6 +224,14 @@ justify-content: space-around;
     margin-right: -150px;
 }
 
+.menu-plats {
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu {
+    width: 30%;
+}
 
 
 }
