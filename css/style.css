@@ -16,8 +16,9 @@ body {
     margin: 0px;}
 
 
-    a:visited {
+    a {
         text-decoration-line: none;
+        color: inherit;
       }
 
 
@@ -348,7 +349,7 @@ header i {
     font-size: 25px;
 }
 
-h1 {
+.titre__menu {
     font-family: "Shrikhand";
     font-style: normal;
     font-weight: 400;
@@ -402,11 +403,75 @@ h1 {
     padding-left: 10px;
     font-size: 15px;
     overflow: hidden;
-    animation: fadeInDown 0.6s;
+    animation: fadeInDown 2s 1;
+    animation-fill-mode: forwards;
+    opacity: 0;
     width: 100%;
    
    
 }
+
+
+.plats:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.plats:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.plats:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+.plats:nth-child(4) {
+    animation-delay: 0.4s;
+}
+
+.plats:nth-child(5)
+{
+    animation-delay: 0.5s;
+}
+
+.plats:nth-child(6) {
+    animation-delay: 0.6s;
+}
+
+.plats:nth-child(7) {
+    animation-delay: 0.7s;
+}
+
+.plats:nth-child(8) {
+    animation-delay: 0.8s;
+}
+
+.plats:nth-child(9) {
+    animation-delay: 0.9s;
+}
+
+.plats:nth-child(10) {
+    animation-delay: 1s;
+}
+
+
+
+@keyframes fadeInDown {
+    0% {
+        
+        opacity: 0%;
+    }
+    100% {
+        
+        opacity: 100%;
+    }
+    
+}
+
+
+
+
+
+
 
 .plats__name {
     width: 90%;
@@ -422,13 +487,18 @@ h1 {
     white-space: nowrap; 
     text-overflow: ellipsis;
     margin-top: 0px;
-    font-size: 15px;
+    font-size: 14px;
+    overflow: hidden;
 
     
 }
 
 .plats__name h3 {
     font-size: 15px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+   
 
 }
 
@@ -459,7 +529,7 @@ h1 {
     cursor: pointer;
     margin-right: -30%;
     overflow: hidden;
-    animation: check;
+    transition-duration: 0.5s;
 }
 
 
@@ -467,12 +537,16 @@ h1 {
 
 
 .plats:hover .plats__confirmation {
-margin-right: 0px;
+margin-right: 0%;
+
+
+
 }
 
 .plats:hover .plats__check {
 
 transform: rotate(0);
+
 
 }
 
@@ -495,26 +569,19 @@ transform: rotate(0);
 }
 
 
-
-
-
 @keyframes check {
     from {
-        margin-left: 0%;
-    }
-    to {
-        margin-left: 80%;
+        right: 0%;
     }
 }
 
-@keyframes fadeInDown {
-    from {
-        transform: scale(0);
-    }
-    to {
-        transform: scale(1)
-    }
-}
+
+
+
+
+
+
+
 
 
 
