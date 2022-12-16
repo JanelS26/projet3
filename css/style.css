@@ -534,7 +534,6 @@ footer h3 {
 margin-right: 0%;
 
 
-
 }
 
 .plats:hover .plats__check {
@@ -558,7 +557,7 @@ transform: rotate(0);
     border-radius: 100px;
     cursor: pointer;
     transform: rotate(180deg);
-    transition-duration: 0.5s;
+    transition-duration: 0.8s;
 
 }
 
