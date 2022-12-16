@@ -1,12 +1,12 @@
 
 header .logo {
-    margin-top: 20px;
-    padding-bottom: 5px;
+    
+    padding: 20px;
     height: 30px;
     display: flex;
     justify-content: center;
     box-shadow: rgb(149 157 165 / 20%) 0px 8px 24px;
-    position: sticky;
+    
 
 }
 
@@ -331,19 +331,6 @@ footer h3 {
 }
 
 
-
-header .logo {
-    margin-top: 20px;
-    padding-bottom: 5px;
-    height: 30px;
-    display: flex;
-    justify-content: center;
-    box-shadow: rgb(149 157 165 / 20%) 0px 8px 24px;
-    position: sticky;
-    align-items: center;
-    gap: 4%;
-
-}
 
 header i {
     font-size: 25px;
