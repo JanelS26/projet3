@@ -11,6 +11,15 @@ header .logo {
 }
 
 
+header i {
+    
+    position: absolute;
+    left: 5%;
+    justify-content: center;
+    font-size: 1.2rem;
+    color: black;
+}
+
 body {
     font-family: "roboto", sans-serif;
     margin: 0px;}
@@ -332,9 +341,7 @@ footer h3 {
 
 
 
-header i {
-    font-size: 25px;
-}
+
 
 .titre__menu {
     font-family: "Shrikhand";
@@ -566,12 +573,6 @@ transform: rotate(0);
 
 
 
-
-
-
-
-
-
 .plats__btn {
     display: flex;
     justify-content: center;
@@ -586,6 +587,7 @@ transform: rotate(0);
     font-size: 17px;
     padding: 16px;
     margin-top: 20px;
+    cursor: pointer;
 }
 
 
