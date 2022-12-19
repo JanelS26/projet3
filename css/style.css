@@ -123,6 +123,16 @@ footer h3 {
 
 }
 
+.btn-explore:hover {
+    filter: brightness(1.1);
+    box-shadow: 8px 8px 8px rgb(0 0 0 / 10%);
+}
+
+.btn-delivery:hover {
+    filter: brightness(1.1);
+    box-shadow: 8px 8px 8px rgb(0 0 0 / 10%);
+}
+
 .fonctionnement h2 {
         font-weight: bold;
         padding: 10px;
@@ -193,6 +203,20 @@ footer h3 {
     padding: 15px;
     background-color: #f7f7f7;
 }
+
+.fa-heart:hover {
+    
+    font-weight: 700 ;
+    transition: 0.5s;
+    background-image: linear-gradient(180deg, #FF79DA, #9356DC);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -moz-text-fill-color: transparent;
+        -moz-background-clip: text;
+
+}
+
+
 
 
 @media only screen and (min-width: 992px) and (max-width: 2560px)
@@ -604,6 +628,7 @@ footer {
     display: flex;
     align-items: center;
     margin-left: 20px;
+    cursor: pointer;
 }
 
 .footer__liens h4 {
